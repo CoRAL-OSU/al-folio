@@ -117,7 +117,61 @@ blockquote {
     }
   }
 }
+.people-page {
+  h2.category {
+    color: var(--global-divider-color);
+    border-bottom: 3px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+  h2.director-category {
+    color: var(--global-divider-color);
+    border-bottom: 3px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .person-post {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-radius: 30px;
+    background-color: var(--global-card-bg-color);
+    font-size: small;
+    p {
+      margin-bottom: 9px;
+    }
+    strong {
+      margin-top: 10px;
 
+    }
+  }
+  .person-headshot {
+    border-radius: 20%;
+    margin: 1px auto;
+    width: 100%;
+  }
+  
+  .person-name {
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  .person-interests {
+    font-weight: 400;
+    color: var(--global-theme-color);
+  }
+  
+  .person-info {
+    font-weight: 400;
+    color: var(--global-text-color);
+    margin: 5px 0;
+  }
+}
 
 // Navbar customization
 
