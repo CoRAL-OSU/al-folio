@@ -4,6 +4,7 @@ interests: Nonlinear and adaptive control theory and applications in multi-agent
 category: director
 image: hbai.png
 contact: he.bai@okstate.edu
+current: true
 ---
 
 **Past Experience and Education**
