@@ -117,6 +117,8 @@ blockquote {
     }
   }
 }
+
+// FORMATTING FOR MEMBERS/PEOPLE PAGE
 .people-page {
   h2.category {
     color: var(--global-divider-color);
@@ -412,7 +414,23 @@ footer.sticky-bottom {
   }
 }
 
+.research-projects {
+  .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    border-radius: 10px;
+    .card-body {
+      padding: auto;
 
+      .card-title {
+        padding-bottom: 0;
+      }
+    }
+    
+   
+  }
+}
 // Projects
 
 .projects {
