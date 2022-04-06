@@ -5,6 +5,7 @@
 title: CoRAL # the website title (if blank, full name will be used instead)
 first_name:
 middle_name:
+full-title: Controls, Robotics and Automation Laboratory
 last_name:
 email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
