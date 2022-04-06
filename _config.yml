@@ -37,7 +37,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1200px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -203,13 +203,19 @@ jekyll-archives:
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
+# Details at https://github.com/inukshuk/jekyll-scholar
 scholar:
 
   last_name: Einstein
   first_name: [Albert, A.]
 
-  style: apa
+  style: ieee
   locale: en
+
+  # sort_by: year
+  # order: descending
+  group_by: year
+  group_order: descending
 
   source: /_bibliography/
   bibliography: papers.bib

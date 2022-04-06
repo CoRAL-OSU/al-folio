@@ -3,15 +3,16 @@ layout: page
 permalink: /publications/
 title: Publications
 description:
-years: [1956, 1950, 1935, 1905]
 nav: true
 ---
 <!-- _pages/publications.md -->
+
+<!-- Styling of this page is mostly handled by Jekyll Scholar. Configurations can be found in _config.yml -->
+
 <div class="publications">
 
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
+
+{% bibliography --file papers %}
+
 
 </div>
