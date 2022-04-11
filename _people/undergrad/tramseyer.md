@@ -1,7 +1,7 @@
 ---
-name: Aditya Mulampally
+name: Theodore Ramseyer
 interests: 
-category: Undergraduate
+category: Graduate
 image: 
 current: false
 position: Tinker Air Force Base
