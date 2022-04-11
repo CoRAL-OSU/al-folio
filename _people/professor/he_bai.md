@@ -7,7 +7,10 @@ contact: he.bai@okstate.edu
 current: true
 ---
 
-**Past Experience and Education**
+**Experience and Education**
+Associate Professor, Mechanical & Aerospace Engineering, Oklahoma State University, Stillwater, OK, 2021-present
+
+Assistant Professor, Mechanical & Aerospace Engineering, Oklahoma State University, Stillwater, OK, 2015-2021
 
 Senior R&D scientist, UtopiaCompression Corporation, Los Angeles, CA, 2010-2015
 
