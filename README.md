@@ -37,6 +37,8 @@ This is example text within the markdown file.
 <h3>Here is an html header</h3>
 
 ### Here is that same html header, but in markdown.
+
+[here](https://coral-osu.github.io/) here is a markdown hyperlink to this website
 ```
 
 ## Publications
