@@ -8,6 +8,7 @@ current: true
 ---
 
 **Experience and Education**
+
 Associate Professor, Mechanical & Aerospace Engineering, Oklahoma State University, Stillwater, OK, 2021-present
 
 Assistant Professor, Mechanical & Aerospace Engineering, Oklahoma State University, Stillwater, OK, 2015-2021
