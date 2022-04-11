@@ -1,7 +1,7 @@
 ---
 name: Aditya Mulampally
 interests: 
-category: Undergraduate
+category: Graduate
 image: 
 current: false
 work: Autonomous golf cart steering and speed controls
