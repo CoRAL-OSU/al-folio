@@ -4,7 +4,7 @@ interests: Navigation and guidance of unmanned aerial systems in GPS denied envi
 category: Graduate
 image: kcoleman.png
 current: false
-work: 
+work: AUGMENTED INVARIANT-EKF DESIGNS FOR SIMULTANEOUS STATE AND DISTURBANCE ESTIMATION
 position: Lockheed Martin
 year: 2020
 purpose: M.S.
