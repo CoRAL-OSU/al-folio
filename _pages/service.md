@@ -11,7 +11,7 @@ nav: true
 - Chair, Graduate Policy Committee
 - Committee member, Mechanical engineering curriculum committee
   
-  {% include {{site.baseurl}}/assets/nx.html %}
+  {% include {{site.baseurl}}/nx.html %}
 
 **Student organization, Oklahoma State University**
 - Mercury Robotics, co-advisor
