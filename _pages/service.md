@@ -10,12 +10,6 @@ nav: true
 - Graduate director
 - Chair, Graduate Policy Committee
 - Committee member, Mechanical engineering curriculum committee
-  
-  <div class="row">
-    <div class="col-sm m-auto">
-      {% include {{site.baseurl}}/nx.html %}
-    </div>
-  </div>
 
 **Student organization, Oklahoma State University**
 - Mercury Robotics, co-advisor
@@ -29,3 +23,11 @@ nav: true
 **IEEE Control Systems Society**
 - Associate Editor (American Control Conference, Conference on Decision and Control)
 - Associate Editor (L-CSS)
+
+
+
+  <div class="row">
+    <div class="col-sm m-auto">
+      {% include {{site.baseurl}}/nx.html %}
+    </div>
+  </div>
