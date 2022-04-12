@@ -14,6 +14,7 @@ year: 2020
   - Airspace management and allocation made conservative and inefficient.
 
 **Our Hypothesis**
+
 ‘In-time’ or ‘real-time’ wind field information, communicated effectively to pilots and traffic management, can enhance safety, efficiency, and robustness of future sUAS operations in
 low-altitude airspace.
 
@@ -29,4 +30,8 @@ low-altitude airspace.
 </div>
 
 **Yearly posters** 
+
+-2020 {% include {{site.baseurl}}/assets/pdf/NRI_INT_1925147_print.pdf %}
+-2021 {% include {{site.baseurl}}/assets/pdf/2021NRIPIPoster_1925147.pdf %}
+-2022 {% include {{site.baseurl}}/assets/pdf/2022NRIPIPosterTemplate_36x24_1925147.pdf %}
 
