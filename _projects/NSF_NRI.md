@@ -25,7 +25,7 @@ low-altitude airspace.
         {% include figure.html path="assets/img/projects/NSF_NRI/CONOP.png" title="CONOP" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/NSF_NRI/integration.png" title="Integration diagram" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/NSF_NRI/integration.jpg" title="Integration diagram" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
