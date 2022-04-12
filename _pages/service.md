@@ -25,6 +25,7 @@ nav: true
 - Associate Editor (L-CSS)
 
 
+**MAE course network**
 
   <div class="row">
     <div class="col-sm m-auto">
