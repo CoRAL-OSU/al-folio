@@ -22,6 +22,6 @@ nav: true
 - Wentz scholarship
 
 
-**IEEE IEEE Control Systems Society**
+**IEEE Control Systems Society**
 - Associate Editor (American Control Conference, Conference on Decision and Control)
 - Associate Editor (L-CSS)
