@@ -31,9 +31,13 @@ low-altitude airspace.
 
 **Yearly posters** 
 
--2020 {% include {{site.baseurl}}/assets/pdf/NRI_INT_1925147_print.pdf %}
+<h2>2022 Poster</h2>
 
--2021 {% include {{site.baseurl}}/assets/pdf/2021NRIPIPoster_1925147.pdf %}
+<iframe src="/assets/pdf/2022NRIPIPosterTemplate_36x24_1925147.pdf" width="100%" height="800px"></iframe>
 
--2022 {% include {{site.baseurl}}/assets/pdf/2022NRIPIPosterTemplate_36x24_1925147.pdf %}
 
+[2022 Poster](/assets/pdf/2022NRIPIPosterTemplate_36x24_1925147.pdf)
+
+[2021 Poster](/assets/pdf/2021NRIPIPoster_1925147.pdf)
+
+[2020 Poster](/assets/pdf/NRI_INT_1925147_print.pdf)
