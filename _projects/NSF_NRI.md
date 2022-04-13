@@ -3,6 +3,7 @@ layout: page
 title: Safe Wind-Aware Navigation for Collaborative Autonomous Aircraft in Low Altitude Airspace
 organization: NSF National Robotics Initiative
 year: 2020
+importance: 1
 ---
 
 **(joint work with Drs. Kamalapurkar, Jacob, Kara, Vance and Fala at OSU)**
