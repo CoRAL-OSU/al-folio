@@ -47,3 +47,13 @@ low-altitude airspace.
 [2021 Poster](/assets/pdf/2021NRIPIPoster_1925147.pdf)
 
 [2020 Poster](/assets/pdf/NRI_INT_1925147_print.pdf)
+
+**Relevant Publications**
+
+<div class="publications">
+
+
+{% bibliography --file NRI %}
+
+
+</div>
