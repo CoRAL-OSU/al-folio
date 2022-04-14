@@ -5,5 +5,6 @@ category: Undergraduate
 image: dcolon.jpg
 work: Autonomous golf cart
 year: 2019
+purpose: undergraduate research
 current: false
 ---
