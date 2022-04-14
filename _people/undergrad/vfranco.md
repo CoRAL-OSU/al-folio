@@ -6,4 +6,5 @@ image: vfranco.jpg
 work: Aerial manipulators
 purpose: McNair scholar
 current: false
+year: 2018
 ---
