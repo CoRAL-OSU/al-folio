@@ -6,4 +6,5 @@ image:
 work: Edison robots, outreach
 purpose: undergraduate research
 current: false
+year: 2018
 ---
