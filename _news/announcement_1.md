@@ -4,4 +4,4 @@ date: 2022-4-12
 inline: true
 ---
 
-Shahbaz's MS defense 
+Shahbaz successfully defended his MS thesis. Congratulations! 
