@@ -4,4 +4,5 @@ interests: Control theory, Autonomous vehicle and assistive driving, Machine Lea
 category: Graduate
 image: Sanzida_Hossain.jpg
 current: true
+purpose: Ph.D.
 ---
