@@ -4,9 +4,7 @@ interests: Human-computer-interaction, Detect-and-Avoid, AI applications in cont
 category: Graduate
 image: atabassum.jpg
 current: false
-work: IMPROVING HUMAN-VEHICLE INTERACTION STRATEGIES 
-FOR UNMANNED AIRCRAFT SYSTEM OPERATIONS IN 
-UNCERTAIN ENVIRONMENTS 
+work: IMPROVING HUMAN-VEHICLE INTERACTION STRATEGIES FOR UNMANNED AIRCRAFT SYSTEM OPERATIONS IN UNCERTAIN ENVIRONMENTS 
 purpose: Ph.D.
 year: 2023
 ---
