@@ -9,7 +9,7 @@ nav: true
 - Prerequisites: Advanced graduate course. Familiarity with basic concepts of probability theory and statistics and programming in MATLAB/Python.
 - Outline: Introduction to estimation theory. Stochastic model development, Bayesian theorem and inference, parameter estimation and state estimation. Review of basic probability theory and stochastic systems. Linear models, neural network model, least squares, estimation, maximum likelihood estimation,
 maximum a posterior estimation, posterior sampling, Markov Chain Monte Carlo (MCMC), Variational Bayesian estimation. Gaussian random vectors, estimation in linear and Gaussian models, state estimation, Kalman filters, prediction and smoothing.
-- Lecture slides
+- Lecture slides: [1]/assets/pdf/class 1_2023.pdf , [2]/assets/pdf/class 2_2023.pdf , [3]/assets/pdf/class 3_2023.pdf, [4]/assets/pdf/class 4_2023.pdf, [4b]/assets/pdf/class 4_nonlinear_2023.pdf , [5]/assets/pdf/class 5_2023.pdf, [6]/assets/pdf/class 6_2023.pdf, [7]/assets/pdf/class 7_2023.pdf, [8]/assets/pdf/class 8_2023.pdf, [9]/assets/pdf/class 9_2023.pdf, [10]/assets/pdf/class 10_2023.pdf
 
 **MAE 4733 Introduction to Mechatronics (Spring, 2016-2023, every year)**
 - Prerequisites: MAE 3113 (Measurements and Instrumentation) or MAE 3403 (Computer Methods in Analysis and Design)
