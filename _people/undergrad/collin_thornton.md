@@ -6,4 +6,5 @@ image: cthornton.jpg
 current: false
 year: 2021
 position: PlusAI
+purpose: Wentz & Goldwater scholar, undergraduate research
 ---
