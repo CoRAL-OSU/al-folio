@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-5-19
+date: 2023-12-15
 inline: true
 ---
 
-Asma and Hao both successfully passed their PhD qualifying exams. Sanzida successfully passed her PhD Prelim exam. Congratulations! 
+Asma and Hao both successfully defended their PhD thesis. Congratulations! 
