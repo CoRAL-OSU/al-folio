@@ -1,1 +1,1 @@
-{% bibliography --file CPS %}
+{% bibliography --file papers %}
