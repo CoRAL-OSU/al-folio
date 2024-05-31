@@ -1,6 +1,6 @@
 ---
 name: Dr. He Bai
-interests: Nonlinear and adaptive control theory and applications in multi-agent systems; Distributed estimation and filtering; Synchronization of nonlinear systems; Estimation, control, learning and decision making for autonomous systems; Unmanned Aircraft System (UAS) integration in the National Airspace (NAS)
+interests: Nonlinear and adaptive control theory and applications in multi-agent systems; Distributed estimation and learning; Navigation, control, and decision making for autonomous systems; Bayesian inference and reinforcement learning.
 category: director
 image: hbai.png
 contact: he.bai@okstate.edu
@@ -21,11 +21,11 @@ Ph.D. in Electrical Engineering, Rensselaer Polytechnic Institute, Troy, NY, 200
 
 M.S.  in Electrical Engineering, Rensselaer Polytechnic Institute, Troy, NY, 2007
 
-B.E. in Automation, University of Science and Technology of China, Hefei, China, 2005
+B.S. in Automation, University of Science and Technology of China, Hefei, China, 2005
 
 **Research Interests**
 
-Nonlinear and adaptive control theory and applications in multi-agent systems; Distributed estimation and filtering; Synchronization of nonlinear systems; Estimation, control, learning and decision making for autonomous systems; Unmanned Aircraft System (UAS) integration in the National Airspace (NAS)
+Nonlinear and adaptive control theory and applications in multi-agent systems; Distributed estimation and learning; Navigation, control, and decision making for autonomous systems; Bayesian inference and reinforcement learning.
 
 **Contact**
 
