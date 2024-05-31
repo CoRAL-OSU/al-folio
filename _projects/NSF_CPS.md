@@ -18,7 +18,7 @@ Our current research is focused on the coordination of IHVs and EAVs to generate
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/NSF_CPS/simulator.jpg" title="Driving simulator" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/CPS/simulator.jpg" title="Driving simulator" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
