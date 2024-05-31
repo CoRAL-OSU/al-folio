@@ -15,3 +15,5 @@ Our main research interests are in the areas of nonlinear control and estimation
     <img src = "{{site.baseurl}}/assets/img/about/research_interest_loops.png" class="m-auto img-fluid rounded z-depth-0" alt="Research Loops" title="Research loops">
 </div>
 
+{% bibliography --file papers %}
+
