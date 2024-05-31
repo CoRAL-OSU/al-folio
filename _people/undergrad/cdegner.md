@@ -5,4 +5,5 @@ category: Undergraduate
 image: cdegner.jpg
 current: false
 year: 2022
+purpose: Wentz scholar, undergraduate research
 ---
