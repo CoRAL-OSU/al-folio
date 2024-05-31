@@ -4,4 +4,5 @@ interests: Indoor wind estimation, Autonomy in transportation and computer visio
 category: Undergraduate
 image: cdegner.jpg
 current: false
+year: 2022
 ---
