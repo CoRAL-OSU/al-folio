@@ -4,4 +4,6 @@ interests: Autonomous golf cart, Robotic Arm manipulation, Application of AI to 
 category: Undergraduate
 image: cthornton.jpg
 current: false
+year: 2021
+position: PlusAI
 ---
