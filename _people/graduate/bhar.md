@@ -4,4 +4,5 @@ interests: distributed sampling methods, multi-agent systems, Bayesian inference
 category: Graduate
 image: bhar.jpg
 current: true
+purpose: Ph.D.
 ---
