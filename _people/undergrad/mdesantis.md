@@ -6,4 +6,5 @@ image: mdesantis.jpg
 current: false
 year: 2022
 position: SwRI
+purpose: undergraduate research
 ---
