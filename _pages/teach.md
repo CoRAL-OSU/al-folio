@@ -5,6 +5,12 @@ title: Teaching
 description:
 nav: true
 ---
+**NEW: MAE 3403 Computer Methods (Fall, 2024)**
+- Prerequisites: Grades of "C" or higher in ENGR 1412 and ENSC 2123 and MAE 3013 and (MAE 3724 or concurrency).
+- Outline: Review of Python programming. Application of linear algebra, numerical methods, statistics, and computer methods in the design, analysis, and simulation of mechanical, thermal, and fluid systems using Python. 
+- Topics: review of python programming, system of linear equations, polynomial finding, introduction to numpy, least squares reqression, interpolation, plotting in Python, root finding, differentiation and integration, read/write from/to files, ODE initial value and boundary value problems, create animation, object oriented programming, machine learning: classification, regression, and clustering, optimization
+
+
 **NEW: MAE 5020 Introduction to Bayesian Estimation (Fall, 2023)**
 - Prerequisites: Advanced graduate course. Familiarity with basic concepts of probability theory and statistics and programming in MATLAB/Python.
 - Outline: Introduction to estimation theory. Stochastic model development, Bayesian theorem and inference, parameter estimation and state estimation. Review of basic probability theory and stochastic systems. Linear models, neural network model, least squares, estimation, maximum likelihood estimation,
