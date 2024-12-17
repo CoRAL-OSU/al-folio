@@ -2,16 +2,17 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://coral-osu.github.io/" />    <!-- Metadata, OpenGraph and Schema.org -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
     
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CoRAL | Page not found</title>
+    <title>CoRAL | Distributed Kalman Filtering</title>
     <meta name="author" content="  " />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Controls, Robotics and Automation Lab (CoRAL)
+" />
 
 
     <!-- Bootstrap & MDB -->
@@ -31,7 +32,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://coral-osu.github.io/404.html">
+    <link rel="canonical" href="https://coral-osu.github.io/projects/distributed_kalman_filtering/">
     
     <!-- Dark Mode -->
     
@@ -94,13 +95,30 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Distributed Kalman Filtering</h1>
+            <p class="post-description"></p>
             <hr>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://coral-osu.github.io/">here</a>.</p>
+            <p><strong>Distributed Kalman Filtering using the internal model average consensus estimator <a href="https://sites.google.com/view/he-bai/research/consensus-estimation-and-dkf" target="_blank" rel="noopener noreferrer">IMACE</a></strong></p>
+
+<p><em>(joint work with Dr. Kevin Lynch and Dr. Randy Freeman at Northwestern University)</em></p>
+
+<p>One of the major applications of average consensus lies in the distributed estimation of the state of dynamical systems, such as distributed Kalman filtering, distributed Kriged Kalman filtering, distributed H_inf filtering, etc. Distributed filtering finds its applications in target tracking and localization, environmental modeling, etc.</p>
+
+<p>One common approach in distributed Kalman filtering is to represent the centralized Kalman filter in the information form, where the correction step of the filter simply sums information from individual agents. With a decentralized average consensus estimator, the needed sum can be estimated to implement the Kalman filter.</p>
+
+<p>When an average consensus estimator is updated sufficiently fast, the estimates of the necessary sums converge to their true values before the next Kalman filter update. Although this approach can recover the optimality of the centralized Kalman filter at each agent, it requires high communication bandwidth and energy consumption for each agent, which may not be feasible for some applications.</p>
+
+<p>In <a href="https://ieeexplore.ieee.org/document/5991484?tp=&amp;arnumber=5991484" target="_blank" rel="noopener noreferrer">C11</a>, we developed a distributed implementation of the centralized Kalman filter with a <em>single time-scale</em>, that is, the average consensus estimator and the Kalman filter are updated at the same frequency. The key observation is that <em>if the agent already has information of the model dynamics for its Kalman filter, it should also employ this information in its average consensus estimator</em>. We then make use of the <a href="https://sites.google.com/view/osu-coral/home/research/average-consensus" target="_blank" rel="noopener noreferrer">IMACE</a>  to match the dynamics of each agent’s consensus estimator to the dynamics of its Kalman filter.This ensures that the estimation error between each agent’s estimate of the state and the true state of the dynamical system has bounded covariance even when the dynamical system is <em>neutrally stable or unstable</em>.</p>
+
+<p>Our assumption on the dynamical system to be estimated is that it is <em>observable only in a centralized sense</em>, that is, the state of the dynamical system may not be observable to individual agents but is observable when the measurements from the agents are fused. The embedded IMACE allows each agent to estimate the entire state of the dynamical system.</p>
+
+<p><strong>Publication</strong></p>
+
+<p>[<a href="https://ieeexplore.ieee.org/document/5991484?tp=&amp;arnumber=5991484" target="_blank" rel="noopener noreferrer">C11</a>]. H. Bai, R. A. Freeman, and K. M. Lynch. Distributed Kalman filtering using the internal model average consensus estimator. In the Proceedings of the 2011 American Control Conference, San Francisco, CA, 2011, pp. 1500-1505.</p>
+
 
           </article>
 
