@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CoRAL | Detect-and-Avoid with delayed pilot commands</title>
+    <meta name="author" content="  " />
+    <meta name="description" content="Controls, Robotics and Automation Lab (CoRAL)
+" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://coral-osu.github.io/projects/detect_and_avoid_delayed/">
+    
+    <!-- Dark Mode -->
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://coral-osu.github.io/">
+              CoRAL
+          </a>
+
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- Add pages to nav bar --><!-- If it's a dropdown -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/people/">People</a>
+              </li>
+<!-- If it's a dropdown -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+<!-- If it's a dropdown -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">Research</a>
+              </li>
+<!-- If it's a dropdown -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/service/">Service</a>
+              </li>
+<!-- If it's a dropdown -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/teach/">Teaching</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">Detect-and-Avoid with delayed pilot commands</h1>
+            <p class="post-description"></p>
+            <hr>
+          </header>
+
+          <article>
+            <p><strong>Dynamic control allocation between onboard DAA and Delayed Pilot Command</strong></p>
+
+<p>Control authority allocation between an autonomous system and a remote human pilot in Unmanned Aircraft System (UAS) Platform has added complexity as it requires  guaranteed operability in dynamic environment. Since human pilot is not the primary analyzer of the dynamic environment,  latency in the communication channel may significantly compromise situational awareness and results in outdated control command.  In this context we present our work on command optimization onboard UAS during an encounter. The objectives of this work:</p>
+
+<ul>
+  <li>Generate offline guidance waiting time map</li>
+  <li>Develop real-time control-switching algorithm</li>
+  <li>Develop command blending algorithm</li>
+</ul>
+
+<p>We consider a Detect-and-Avoid (DAA) problem, where the UAS is in an active encounter with a dynamic intruder. The UAS is remotely controlled by a pilot at the Ground Control Station ( GCS) . We assume that the communication between the GCS and the UAS is subject to a constant delay. We approach the problem without redesigning the onboard DAA algorithm. Instead, we employ a dynamic control allocation approach between the pilot and the DAA system to effectively increase pilot’s contribution within safe operational conditions and enhance human-machine user experience.</p>
+
+<p><strong>Generate offline guidance waiting time map</strong></p>
+
+<p>We propose a Markov Decision Process (MDP) to develop an optimal waiting strategy to determine how long the UAS can wait for the pilot command at each state. We consider that a UAS (ownship) encounters a dynamic intruder in the three dimensional space. The state space of the relative kinematics has six states:</p>
+
+<ul>
+  <li>Relative distance in x dimension,</li>
+  <li>Relative distance in y dimension,</li>
+  <li>Relative altitude,</li>
+  <li>Intruder horizontal speed ,</li>
+  <li>Relative vertical velocity, and</li>
+  <li>Intruder heading.</li>
+</ul>
+
+<p>The action space has two actions:</p>
+<ul>
+  <li>Wait, and</li>
+  <li>Maneuver.</li>
+</ul>
+
+<p>The reward function is designed such that it will get positive reward for waiting at the same time will receive high negative reward if the encounter get closer than the well clear threshold. We propagated 1.5 million trajectories and using value iteration algorithm estimated the optimal action at each state.</p>
+
+<p>As we have transition matrix and the optimal action, we propagate every possible path to the threshold violation state and obtain the corresponding collision probability. Assuming that the path is acyclic, the expected waiting time for that state is calculated as the average of the waiting times of all the paths leading to collision weighted by their probabilities.  Examples of wait map can be seen in below, the figure in the left  illustrates a front view of 3-D wait map, the red zone depicts the collision zone, where the figure in the right side illustrates top view of the map and how intruder heading affect the wait time.</p>
+
+<!-- Side by side images -->
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/projects/daa_delayed/daa_front_wait_map-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/projects/daa_delayed/daa_front_wait_map-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/projects/daa_delayed/daa_front_wait_map-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/projects/daa_delayed/daa_front_wait_map.png" title="Front View: 3-D wait map">
+
+  </picture>
+
+</figure>
+
+        <div class="caption">
+        Parameters: Intruder velocity = 110 m/s ; intruder heading =0
+        </div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/projects/daa_delayed/daa_top_wait_map-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/projects/daa_delayed/daa_top_wait_map-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/projects/daa_delayed/daa_top_wait_map-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/projects/daa_delayed/daa_top_wait_map.png" title="Top View: 3-D wait map">
+
+  </picture>
+
+</figure>
+
+        <div class="caption">
+        Parameters: Intruder velocity = 255 m/s ; intruder heading =+5
+        </div>
+    </div>
+    
+</div>
+
+<p><strong>Develop real-time control-switching algorithm and command blending algorithm</strong></p>
+
+<p>To incorporate the waiting time map, a wait time manager is developed and integrated in the simulator. The wait time manager incorporates the waiting time map during an encounter and initializes a timer to wait for the pilot command. It is activated by default when the operation mode is DAA-Pilot with the provision of manually turning it off. The command blending is coupled with wait manager and can only be utilized when the wait manager is turned on. The wait time manager loads the waiting time maps and matches the current state with a state in the wait map. If the pilot command is delayed and the wait time at the current state is greater than the anticipated communication latency, the UAS waits. Otherwise the DAA overrides the delayed pilot command to resolve the encounter. However, if a delayed pilot command is received, the command blending algorithm discussed in [1, Section III.C ] is invoked to decide the maneuver options and to execute a more pilot-like maneuver. We compare two different setup:</p>
+
+<ul>
+  <li>
+    <p>Baseline setup with the DAA-Pilot mode and the wait manager turned off</p>
+  </li>
+  <li>
+    <p>Integrated setup with the DAA-Pilot mode and the wait manager turned on.</p>
+  </li>
+</ul>
+
+<p>To examine the performance of our proposed algorithms, we consider the following questions:</p>
+
+<ul>
+  <li>First, does the UAS wait without jeopardizing safety?
+    <ul>
+      <li>We find that no loss of well clear (LoWC) occurred during any of the encounters in the 1000 simulations. This shows that waiting for pilot command does not lead to well clear violation for the simulated encounters.</li>
+    </ul>
+  </li>
+  <li>Second, if the UAS waits, is it able to receive and execute the delayed pilot command instead of overriding it?
+    <ul>
+      <li>Yes, the wait manager allows the UAS to receive more pilot commands and reduce instances of DAA overrides. The pilot command reception is increased by 21.12% with the integrated setup compared to the baseline setup.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/projects/daa_delayed/daa_pilot_command_graph-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/projects/daa_delayed/daa_pilot_command_graph-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/projects/daa_delayed/daa_pilot_command_graph-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/projects/daa_delayed/daa_pilot_command_graph.png" title="Number of commands vs Command status">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+
+        <strong>Command type with control-switching algorithm</strong>
+
+        The plot at left side shows the status of Pilot Command in Encounters. Blue bar represents the baseline setup and orange bar represents the integrated setup. The number of pilot command reception is increased with the integrated setup.
+
+        </div>
+    </div>
+    
+</div>
+
+<ul>
+  <li>
+    <p>Third, how much does the UAS deviate from the desired trajectory with the wait manager compared to without the wait manager?</p>
+
+    <ul>
+      <li>Table below shows the average deviation from the actual trajectory in the two setup. The results in Table 4 show that the mean trajectory deviation is almost the same for both setups. In the integrated setup, the UAS waits for the pilot command to arrive, which may induce more aggressive maneuvers, causing the UAS to deviate more from the original trajectory. However, the difference is minimal.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/projects/daa_delayed/daa_deviation_table-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/projects/daa_delayed/daa_deviation_table-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/projects/daa_delayed/daa_deviation_table-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-0 mx-auto" src="/assets/img/projects/daa_delayed/daa_deviation_table.png" title="Mean horizontal and vertical deviation">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/projects/daa_delayed/daa_trajectory_3d_isometric-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/projects/daa_delayed/daa_trajectory_3d_isometric-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/projects/daa_delayed/daa_trajectory_3d_isometric-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/projects/daa_delayed/daa_trajectory_3d_isometric.png" title="Isometric trajectory view">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/projects/daa_delayed/daa_trajectory_xy-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/projects/daa_delayed/daa_trajectory_xy-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/projects/daa_delayed/daa_trajectory_xy-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/projects/daa_delayed/daa_trajectory_xy.png" title="X-Y trajectory view">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<div class="caption">
+The trajectory deviations from the two setup for the same scenario.  In this scenario, the DAA override trajectory is 4.36 times more deviated than the delayed piloted trajectory. However, alternate example is also plausible.
+</div>
+
+<p>We are currently working on large scale simulation with constant and irregular delay as well as extending command-blending algorithm.</p>
+
+<p><strong>Publication</strong></p>
+
+<p>[1] Tabassum, Asma, He Bai, and Craig Kleski. “Optimizing Unmanned Aircraft System Decision Making for Detect-and-Avoid with Delayed Pilot Commands.” AIAA AVIATION 2020 FORUM. 2020.</p>
+
+          </article>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2025 CoRAL. 
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  </body>
+</html>
+
