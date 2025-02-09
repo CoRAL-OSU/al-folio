@@ -2,7 +2,7 @@
 layout: page
 title: Safe Wind-Aware Navigation for Collaborative Autonomous Aircraft in Low Altitude Airspace
 organization: NSF National Robotics Initiative
-year: 2020
+year: 2020 - 2025
 importance: 1
 ---
 
