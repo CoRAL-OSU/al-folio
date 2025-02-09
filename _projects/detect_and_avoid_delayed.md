@@ -2,7 +2,7 @@
 layout: page
 title: Detect-and-Avoid with delayed pilot commands
 organization: Navy
-year: 2020
+year: 2020 - 2021
 ---
 
 **Dynamic control allocation between onboard DAA and Delayed Pilot Command**
