@@ -9,7 +9,7 @@ RL is a data-driven approach to determining optimal policies in the presence of 
 
 a) time-scale separation in clustered networks, such as power networks,
 
-b) a hierarchical structure driven by global and local reward functions, such as multi-group target tracking application.
+b) a hierarchical structure driven by global and local reward functions, such as the multi-drone multi-target tracking application below (*click the picture to redirect to the youtube video*).
 
 [![drone swarm multi-target tracking](https://img.youtube.com/vi/CEz4tTX1CIU/0.jpg)](https://www.youtube.com/watch?v=CEz4tTX1CIU)
 
