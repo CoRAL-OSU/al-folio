@@ -2,7 +2,7 @@
 layout: page
 title: Cooperative Driving in Heterogeneous Traffic of Manned and Unmanned Vehicles
 organization: NSF Cyber Physical Systems Medium
-year: 2022
+year: 2022 - 2025
 importance: 1
 ---
 
