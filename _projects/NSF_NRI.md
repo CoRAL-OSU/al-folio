@@ -40,13 +40,13 @@ We built a human-in-the-loop simulator based on AirSim to evaluate operators' pe
 
 [![Simulator](https://img.youtube.com/vi/pj01xTA7kRc/0.jpg)](https://www.youtube.com/watch?v=pj01xTA7kRc)
 
-Our experiments show that in a survey mission of a football stadium, operators' performance improves if wind conditions are presented to them in a user interface. 
+Our experiments show that in a survey mission for a football stadium, operators' performance improves if wind conditions are presented to them in a user interface. 
 
-{% include figure.html path="assets/img/mission.jpg" title="Surveying 5 locations in a stadium" class="img-fluid rounded z-depth-1" width="200%" height="200px" %}
+{% include figure.html path="assets/img/mission.jpg" title="Surveying 5 locations in a stadium" class="img-fluid rounded z-depth-1" width="200%" height="200%" %}
 
 Figure below compares the traveled distance with a basic user interface and a wind-aware user interface.
 
-{% include figure.html path="assets/img/performance.png" title="Comparison of human operators' performance with and without a wind display" class="img-fluid rounded z-depth-1" width="200%" height="200px" %}
+{% include figure.html path="assets/img/performance.png" title="Comparison of human operators' performance with and without a wind display" class="img-fluid rounded z-depth-1" width="200%" height="200%" %}
 
 **Experiments**
 
