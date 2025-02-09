@@ -12,17 +12,17 @@ Without taking into account epistemic uncertainties, models learned by decentral
 This project aims to create a theoretical framework for designing and analyzing **decentralized Bayesian learning** algorithms via gradient-based MCMC and to identify feasible protocols for enhancing communication and computational efficiency of the algorithms and their privacy properties.
 
 One class of gradient-based MCMC algorithms is derived from the Lagenvin dynamics. The video below (click the picture) shows the comparison between Metropolis–Hastings Sampling (MH), Unadjusted Langevin algorithm (ULA), and Metropolis–Hastings Adjusted Langevin algorithm (MALA) on a bimodal distribution. 
+
 [![sampling algorithms](https://img.youtube.com/vi/7R5L-iJSbCI/0.jpg)](https://www.youtube.com/watch?v=7R5L-iJSbCI)
 
 Our main contributions are investigating decentralized algorithms to achieve MCMC sampling. For example, DULA (decentralized ULA) was developed based on ULA. 
+
 [![DULA](https://img.youtube.com/vi/T8FHYJO71aQ/0.jpg)](https://www.youtube.com/watch?v=T8FHYJO71aQ)
 
 One of the benefits of Bayesian learning is to enable **out-of-distribution (OOD) detection**. The figure below shows that a Bayesian LeNET learned in a decentralized fashion based on MNIST data responds differently to the SVHN dataset (OOD data). 
 {% include figure.html path="assets/img/agent1_nd.png" title="Decentralzied OOD detection on MNIST and SVHN datasets" class="img-fluid rounded z-depth-1" width="100" height="100" %}
 SGD on the other hand responds similarly to the MNIST and SVHN datasets. 
 {% include figure.html path="assets/img/sgd_svhn.png" title="SGD trained LeNET responds similarly to MNIST and SVHN datasets" class="img-fluid rounded z-depth-1" width="100" height="100" %}
-
-
 
 **Relevant Publications**
 
