@@ -2,7 +2,7 @@
 layout: page
 title: Decentralized Bayesian Learning
 organization: NSF
-year: 2023
+year: 2023 - 2026
 importance: 1
 ---
 
