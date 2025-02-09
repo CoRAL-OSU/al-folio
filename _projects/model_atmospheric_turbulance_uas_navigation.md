@@ -2,7 +2,7 @@
 layout: page
 title: Modeling atmospheric turbulence and its impact on small UAS navigation
 organization: NASA-EPSCoR
-year: 2018
+year: 2018 - 2019
 ---
 
 **(joint work with Dr. Balaji Jayaraman at OSU and supported by NASA EPSCoR)**
