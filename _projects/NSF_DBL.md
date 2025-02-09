@@ -12,9 +12,9 @@ Without taking into account epistemic uncertainties, models learned by decentral
 This project aims to create a theoretical framework for designing and analyzing **decentralized Bayesian learning** algorithms via gradient-based MCMC and to identify feasible protocols for enhancing communication and computational efficiency of the algorithms and their privacy properties.
 
 One of the benefits of Bayesian learning is to enable **out-of-distribution (OOD) detection**. The figure below shows that Bayesian LeNETs learned in a decentralized fashion based on MNIST data respond differently to the SVHN dataset (out-of-distribution). 
-{% include figure.html path="assets/img/OOD.png" title="Decentralzied OOD detection on MNIST and SVHN datasets" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/OOD.png" title="Decentralzied OOD detection on MNIST and SVHN datasets" class="img-fluid rounded z-depth-1" width="200" %}
 SGD on the other hand responds similarly to the MNIST and SVHN datasets. 
-{% include figure.html path="assets/img/sgd_svhn.png" title="SGD trained LeNET responds similarly to MNIST and SVHN datasets" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/sgd_svhn.png" title="SGD trained LeNET responds similarly to MNIST and SVHN datasets" class="img-fluid rounded z-depth-1" width="200" %}
 
 
 
