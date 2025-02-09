@@ -37,6 +37,7 @@ low-altitude airspace.
 
 **Simulator**
 We built a human-in-the-loop simulator based on AirSim to evaluate operators' performance in the presence of wind disturbances. 
+
 [![Simulator](https://img.youtube.com/vi/pj01xTA7kRc/0.jpg)](https://www.youtube.com/watch?v=pj01xTA7kRc)
 
 Our experiments show that in a survey mission of a football stadium, operators' performance improves if wind conditions are presented to them in a user interface. 
