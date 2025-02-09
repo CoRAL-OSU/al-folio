@@ -22,6 +22,15 @@ Our current research is focused on the coordination of IHVs and EAVs to generate
     </div>
 </div>
 
+
+An attentive driver is advised to speed UP by the co-pilot (red box), and the silver vehicle is advised to slow down, allowing the silver vehicle to merge from behind.
+
+[![Attentive driver](https://img.youtube.com/vi/472vKfpKYXA/0.jpg)](https://www.youtube.com/watch?v=472vKfpKYXA)
+
+An inattentive driver is advised to SLOW down by the copilot (red box), and the silver vehicle is advised to speed up, allowing the silver vehicle to merge in the front.
+
+[![Attentive driver](https://img.youtube.com/vi/g5NmQqldsfo/0.jpg)](https://www.youtube.com/watch?v=g5NmQqldsfo)
+
 **Relevant Publications**
 
 <div class="publications">
