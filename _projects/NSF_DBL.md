@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Decentralized Bayesian Learning
-organization: NSF, Army Research Lab
+organization: Army Research Lab, NSF 
 year: 2023 - 2026
 importance: 1
 ---
