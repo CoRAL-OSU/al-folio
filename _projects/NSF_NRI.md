@@ -44,8 +44,17 @@ Our experiments show that in a survey mission of a football stadium, operators' 
 
 {% include figure.html path="assets/img/mission.jpg" title="Surveying 5 locations in a stadium" class="img-fluid rounded z-depth-1" width="200%" height="200px" %}
 
+Figure below compares the traveled distance with a basic user interface and a wind-aware user interface.
+
 {% include figure.html path="assets/img/performance.png" title="Comparison of human operators' performance with and without a wind display" class="img-fluid rounded z-depth-1" width="200%" height="200px" %}
 
+**Experiments**
+
+We conducted outdoor experiments to perform dynamics-based wind velocity estimation (without a wind velocity sensor). 
+
+{% include figure.html path="assets/img/SK8.jpg" title="SK8 in flight" class="img-fluid rounded z-depth-1" width="200%" height="200px" %}
+
+{% include figure.html path="assets/img/horWindEst_test2.png" title="Performance of various methods" class="img-fluid rounded z-depth-1" width="200%" height="200px" %}
 
 **Yearly posters** 
 
